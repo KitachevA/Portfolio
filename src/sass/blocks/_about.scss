@@ -1,0 +1,100 @@
+.aboutme {
+    &-grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 520px) ;
+    }
+    min-height: 600px;
+    padding-top: 150px;
+    &__descr{
+        &-separator {
+            width: 60px;     
+            border: 2px solid $main-color;
+        }
+        &-text{
+            margin-top: 20px;
+            width: 570px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        &-grid-container{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 260px);
+            column-gap: 50px;
+            row-gap: 10px;
+        }
+        &-skill{
+            display: flex;
+            justify-content: space-between;
+            width: 260px;
+            height: 116px;
+        }
+        &-skill-circle.web{
+            position: relative;
+            width: 36px;
+            height: 36px;
+            background: $main-color;
+            border-radius: 100%;
+            &::after{
+                content:'';
+                position: absolute;
+                background: url('../icons/about_me/web_development.svg') center center/cover no-repeat ;
+                width: 25px;
+                height: 25px;
+                bottom: -5px;
+                left: 14px;
+            }
+        }
+        &-skill-circle.app{
+            position: relative;
+            width: 36px;
+            height: 36px;
+            background: $main-color;
+            border-radius: 100%;
+            &::after{
+                content:'';
+                position: absolute;
+                background: url('../icons/about_me/mobile_dev.svg') center center/cover no-repeat ;
+                width: 14.28px;
+                height: 24.22px;
+                bottom: -3px;
+                left: 20px;
+            }
+        }
+        &-skill-circle.uiux{
+            position: relative;
+            width: 36px;
+            height: 36px;
+            background: $main-color;
+            border-radius: 100%;
+            &::after{
+                content:'';
+                position: absolute;
+                background: url('../icons/about_me/design.svg') center center/cover no-repeat ;
+                width: 25px;
+                height: 20.56px;
+                bottom: -2px;
+                left: 16px;
+            }
+        }
+        &-skill-text{
+            width: 200px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+        &-mb5{
+            margin-bottom: 5px;
+        }
+    }
+    &__photo {
+        width: 400px;
+        height: 600px;
+        img{
+            width: 100%;
+        }
+    }
+}
