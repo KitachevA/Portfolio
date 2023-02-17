@@ -1,0 +1,130 @@
+.skills {
+    padding: 120px 10px 0 10px;
+    &__title {
+        position: relative;
+        margin: 0;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -5px;
+        left: 50%;
+        transform: translateX(-40%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    .devider {
+        margin: 20px auto 0 auto;
+    }
+    &__item{
+        width: 270px;
+        min-height: 270px;
+        border: 1px solid black;
+        padding: 30px 29px 25px 30px;
+        &-icon {
+            height: 65px;
+            img {
+                height:100%;
+            }
+        }
+        &-techo {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        &-text {
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 12px;
+    }
+    &__progressbar{
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        column-gap: 45px;
+        margin-top: 120px;
+        &-item {
+            width: 350px;
+            height: 70px;
+        }
+        &-wrapper {
+            padding-left: 14px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+        &-exp {
+            position: relative;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            @include before_circle;
+            &:before {
+                top: 50%;
+                transform: translateY(-50%);
+                left: -13px
+            }
+            
+        }
+        &-label {
+            &-input {
+                border: none;
+                text-align: end;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                color: #000000;
+                cursor: pointer;
+            }
+        }
+        &-all {
+            margin-top: 20px;
+            width: 350px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+        }
+        &-me{
+            height: 14px;
+            background: $main-color;
+            border-radius: 4px;
+        }
+    }
+
+}
+
+.skills__item:nth-child(4){
+    .skills__item-icon{
+        height: 65px;
+        width: 200px;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.skills__item:nth-child(7){
+    .skills__item-icon{
+        height: 65px;
+        width: 200px;
+        img {
+            height: 100%;
+            width: 90%;
+        }
+    }
+}

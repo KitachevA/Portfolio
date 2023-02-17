@@ -1,6 +1,8 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
-      closeMenu = document.querySelector('.menu__close');
+      closeMenu = document.querySelector('.menu__close'),
+      progress = document.querySelectorAll('#skill'),
+      scale = document.querySelectorAll('.skills__progressbar-me');
 
 
 
@@ -12,3 +14,9 @@ const hamburger = document.querySelector('.hamburger'),
       closeMenu.addEventListener('click', ()=>{
             menu.classList.remove('active');
       });
+
+     progress.forEach((item,i)=>{
+            item.addEventListener('change',()=>{
+                  scale[i].style.width = item.value;
+            });
+     });

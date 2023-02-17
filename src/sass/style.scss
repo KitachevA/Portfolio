@@ -14,9 +14,18 @@
     margin: 0 auto;
 }
 
+.devider {
+    width: 60px;     
+    border: 2px solid $main-color;
+}
+
+
+
 @import "blocks/promo";
 @import "blocks/title";
 @import "blocks/button";
 @import "blocks/sidepenal";
 @import "blocks/menu";
 @import "blocks/about";
+@import "blocks/resume";
+@import "blocks/skills";
